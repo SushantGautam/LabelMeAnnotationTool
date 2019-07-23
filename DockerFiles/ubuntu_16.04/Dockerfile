@@ -35,5 +35,6 @@ RUN chown -R www-data:www-data /var/www/html
 # port binding
 EXPOSE 80
 
+
 # run
 CMD ["/usr/sbin/apache2ctl", "-D", "FOREGROUND"]
