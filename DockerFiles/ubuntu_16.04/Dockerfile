@@ -31,6 +31,8 @@ RUN git clone https://github.com/ublrandd/LabelMeAnnotationTool.git
 RUN mv ./LabelMeAnnotationTool/ /var/www/html/LabelMeAnnotationTool/
 RUN cd /var/www/html/LabelMeAnnotationTool/ && make
 RUN chown -R www-data:www-data /var/www/html
+RUN chmod -R a+rwx /var/www/html/
+RUN service apache2 restart
 
 # port binding
 EXPOSE 80
