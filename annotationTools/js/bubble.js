@@ -291,7 +291,7 @@ function GetPopupFormEdit(anno) {
 // Shows the box to enter the object name
 function HTMLobjectBox(obj_name) {
   var html_str="";
-  var valued = "car";
+  var valued = ""; //car change initial value
   
   html_str += '<input name="objEnter" id="objEnter" type="text" style="width:220px;" tabindex="0" value="'+`${valued}`+'" title="Enter the object\'s name here. Avoid application specific names, codes, long descriptions. Use a name you think other people would agree in using. "';
 
