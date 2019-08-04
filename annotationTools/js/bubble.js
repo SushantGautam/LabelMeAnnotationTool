@@ -293,7 +293,7 @@ function HTMLobjectBox(obj_name) {
   var html_str="";
   var valued = ""; //car change initial value
   
-  html_str += '<input name="objEnter" id="objEnter" type="text" style="width:220px;" tabindex="0" value="'+`${valued}`+'" title="Enter the object\'s name here. Avoid application specific names, codes, long descriptions. Use a name you think other people would agree in using. "';
+  html_str += '<input name="objEnter" id="objEnter" type="text" style="width:220px;" tabindex="0"  value="'+obj_name+'" title="Enter the object\'s name here. Avoid application specific names, codes, long descriptions. Use a name you think other people would agree in using. "';
 
   html_str += ' onkeyup="var c;if(event.keyCode)c=event.keyCode;if(event.which)c=event.which;if(c==13){';
   //html_str += 'console.log($(".ui-autocomplete.ui-widget:visible").length);';
